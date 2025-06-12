@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UKNOWIDONT</title>
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/dgkt7x7go/image/upload/v1749585312/image_1_ayfmtk.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .flicker-smooth {
+      animation: flickerAnim 3s ease forwards;
+    }
+
+    @keyframes flickerAnim {
+      0% { box-shadow: none; filter: brightness(1); }
+      5% { box-shadow: 0 0 8px #ff7700, 0 0 12px #ff770055; filter: brightness(1.4); }
+      10% { box-shadow: none; filter: brightness(0.8); }
+      15% { box-shadow: 0 0 6px #ff7700; filter: brightness(1.2); }
+      25% { box-shadow: none; filter: brightness(1); }
+      35% { box-shadow: 0 0 10px #ff770088; filter: brightness(1.3); }
+      50% { box-shadow: none; }
+      100% { box-shadow: 0 0 10px #ff7700aa, 0 0 20px #ff770044; filter: brightness(1.2); }
+    }
+
+    .size-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      margin-top: 0.75rem;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 8px;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      border: 1px solid #ff660022;
+      transition: all 0.3s ease;
+    }
+
+    .size-options label {
+      color: #ccc;
+      font-family: 'Orbitron', sans-serif;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .size-options input[type="radio"] {
+      accent-color: #ff6600;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="pfp"></div>
+    <h1>UKNOWIDONT</h1>
+    <div class="subtitle">VISUAL ARTIST</div>
+    <div class="nav-buttons">
+      <a href="#gallery">GALLERY</a>
+      <a href="#commissions">ORDER A COMMISSION</a>
+      <a href="#tos">TOS</a>
+    </div>
+    <div class="contact">
+      Contact: <a href="mailto:uknowidont.studio@gmail.com">uknowidont.studio@gmail.com</a>
+    </div>
+  </div>
+
+  <section id="gallery">
+    <h2>GALLERY</h2>
+    <div class="gallery-grid">
+      <a href="https://res.cloudinary.com/dgkt7x7go/image/upload/v1749750771/Illustration44_axjtuw.jpg" target="_blank">
+        <img src="https://res.cloudinary.com/dgkt7x7go/image/upload/v1749750771/Illustration44_axjtuw.jpg" alt="Post 1">
+      </a>
+      <a href="https://res.cloudinary.com/dgkt7x7go/image/upload/v1749750753/Fox_xrcvxe.jpg" target="_blank">
+        <img src="https://res.cloudinary.com/dgkt7x7go/image/upload/v1749750753/Fox_xrcvxe.jpg" alt="Post 2">
+      </a>
+      <a href="https://res.cloudinary.com/dgkt7x7go/image/upload/v1749750951/Illustration22_eypefo.jpg" target="_blank">
+        <img src="https://res.cloudinary.com/dgkt7x7go/image/upload/v1749750951/Illustration22_eypefo.jpg" alt="Post 3">
+      </a>
+      <a href="https://res.cloudinary.com/dgkt7x7go/image/upload/v1749751057/guweizrff-min_zwiy9o.jpg" target="_blank">
+        <img src="https://res.cloudinary.com/dgkt7x7go/image/upload/v1749751057/guweizrff-min_zwiy9o.jpg" alt="Post 4">
+      </a>
+      <a href="https://res.cloudinary.com/dgkt7x7go/image/upload/v1749750942/Illustration10-min_vfkwq7.jpg" target="_blank">
+        <img src="https://res.cloudinary.com/dgkt7x7go/image/upload/v1749750942/Illustration10-min_vfkwq7.jpg" alt="Post 5">
+      </a>
+      <a href="https://res.cloudinary.com/dgkt7x7go/image/upload/v1749750781/Illustration28_bf2c7u.jpg" target="_blank">
+        <img src="https://res.cloudinary.com/dgkt7x7go/image/upload/v1749750781/Illustration28_bf2c7u.jpg" alt="Post 6">
+      </a>
+    </div>
+  </section>
+  
+  <section id="commissions"> 
+    <h2>Order a Commission</h2>
+  
+    <h3>Choose a Type</h3>
+    <div class="price-list" id="type-list">
+      <div class="type-option">
+        <div class="price-item" data-type="Sketch">
+          <h3>Sketch</h3><p>$10</p>
+        </div>
+        <div class="size-options hidden">
+          <div class="size-item" data-type="Sketch - Head">+$0 - Head</div>
+          <div class="size-item" data-type="Sketch - Half-Body">+$5 - Half-Body</div>
+          <div class="size-item" data-type="Sketch - Full-Body">+$10 - Full-Body</div>
+        </div>
+      </div>
+    
+      <div class="type-option">
+        <div class="price-item" data-type="Line Art">
+          <h3>Line Art</h3><p>$20</p>
+        </div>
+        <div class="size-options hidden">
+          <div class="size-item" data-type="Line Art - Head">+$0 - Head</div>
+          <div class="size-item" data-type="Line Art - Half-Body">+$5 - Half-Body</div>
+          <div class="size-item" data-type="Line Art - Full-Body">+$10 - Full-Body</div>
+        </div>
+      </div>
+    
+      <div class="type-option">
+        <div class="price-item" data-type="Flat Color">
+          <h3>Flat Color</h3><p>$29</p>
+        </div>
+        <div class="size-options hidden">
+          <div class="size-item" data-type="Flat Color - Head">+$0- Head</div>
+          <div class="size-item" data-type="Flat Color - Half-Body">+$10 - Half-Body</div>
+          <div class="size-item" data-type="Flat Color - Full-Body">+$15 - Full-Body</div>
+          <div class="size-item" data-type="Flat Color - Character Sheet">+$49 - Character Sheet</div>
+        </div>
+      </div>
+    
+      <div class="type-option">
+        <div class="price-item" data-type="Full Render">
+          <h3>Full Render</h3><p>$49</p>
+        </div>
+        <div class="size-options hidden">
+          <div class="size-item" data-type="Full Render - Head">+$0 - Head</div>
+          <div class="size-item" data-type="Full Render - Half-Body">+$15 - Half-Body</div>
+          <div class="size-item" data-type="Full Render - Full-Body">+$20 - Full-Body</div>
+          <div class="size-item" data-type="Full Render - Character Sheet">+$49 - Character Sheet</div>
+        </div>
+      </div>
+    </div>
+    
+  
+    <h3>Add-ons</h3>
+    <div class="price-list" id="addons-list">
+      <div class="price-item" data-addon="Background">
+        <h3>Background</h3><p>+$10</p>
+      </div>
+      <div class="price-item" data-addon="Props">
+        <h3>Props</h3><p>+$5</p>
+      </div>
+      <div class="price-item" data-addon="Dynamic Pose">
+        <h3>Dynamic Pose</h3><p>+$10</p>
+      </div>
+      <div class="price-item" data-addon="Lighting">
+        <h3>Other</h3><p>Discribe it in the form below.</p>
+      </div>
+    </div>
+  
+    <h3 style="margin-top: 2rem;">Payment Method</h3>
+    <div class="price-list" id="payment-list">
+      <div class="price-item" data-payment="paypal">
+        <h3>PayPal</h3>
+      </div>
+      <div class="price-item" data-payment="kofi">
+        <h3>Ko-fi</h3>
+      </div>
+    </div>
+  
+    <form class="commission-form" action="https://formspree.io/f/mkgbrvay" method="POST" onsubmit="return validateForm()">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="description" placeholder="Commission Details" required></textarea>
+  
+      <input type="hidden" name="type" id="selectedType">
+      <input type="hidden" name="addons" id="selectedAddons">
+      <input type="hidden" name="payment" id="selectedPayment">
+  
+      <button type="submit">Send</button>
+      <input type="hidden" name="type" id="selectedType">
+<input type="hidden" name="addons" id="selectedAddons">
+<input type="hidden" name="payment" id="selectedPayment">
+<div style="position:absolute; left:-9999px;">
+  <label for="twitter">Your Twitter (leave blank):</label>
+  <input type="text" name="twitter" id="twitter">
+</div>
+<input type="text" name="_gotcha" style="display:none">
+</form>
+    </form>
+
+  </section>
+  
+  
+
+  <div id="tos" class="container">
+    <h2>TOS</h2>
+    <p>1. The client must pay half of the total payment to confirm their purchase.</p>
+    <p>2. No refund(s), or any edit(s) will be provided after the delivery of the product.</p>
+    <p>3. The artist (me) has all rights to decline any request.</p>
+    <p>4. All the payments must be through Paypal or Ko-fi.</p>
+    <p>5. Request must not contain NSFW, Furry, NFT, high amounts of gore, anything related to 'fetish' or against judiciary.</p>
+    <p>6. You own a Personal license for the standerd purchase, to get comercal license please include 'For comercal use' in the form.</p>
+  </div>
+  <script>
+    const selectedTypeInput = document.getElementById("selectedType");
+    const selectedAddonsInput = document.getElementById("selectedAddons");
+    const selectedPaymentInput = document.getElementById("selectedPayment");
+  
+    let selectedAddons = new Set();
+    let selectedPayment = null;
+  
+    // Type & Size Selection
+    document.querySelectorAll('.type-option').forEach(option => {
+      const typeButton = option.querySelector('.price-item');
+      const sizeMenu = option.querySelector('.size-options');
+      const sizeItems = option.querySelectorAll('.size-item');
+  
+      // Toggle size menu visibility
+      typeButton.addEventListener('click', () => {
+        // Hide all other size menus
+        document.querySelectorAll('.size-options').forEach(menu => {
+          if (menu !== sizeMenu) menu.classList.add('hidden');
+        });
+  
+        // Show or hide current
+        sizeMenu.classList.toggle('hidden');
+      });
+  
+      sizeItems.forEach(sizeItem => {
+        sizeItem.addEventListener('click', () => {
+          // Clear previous selections
+          document.querySelectorAll('.size-item').forEach(item => item.classList.remove('selected'));
+          document.querySelectorAll('.type-option .price-item').forEach(item => item.classList.remove('selected'));
+  
+          // Highlight current
+          sizeItem.classList.add('selected');
+          typeButton.classList.add('selected');
+  
+          // Set value
+          selectedTypeInput.value = sizeItem.dataset.type;
+        });
+      });
+    });
+  
+    // Addons
+    document.querySelectorAll('#addons-list .price-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const addon = item.dataset.addon;
+        item.classList.toggle('selected');
+  
+        if (selectedAddons.has(addon)) {
+          selectedAddons.delete(addon);
+        } else {
+          selectedAddons.add(addon);
+        }
+  
+        selectedAddonsInput.value = Array.from(selectedAddons).join(', ');
+      });
+    });
+  
+    // Payment
+    document.querySelectorAll('#payment-list .price-item').forEach(item => {
+      item.addEventListener('click', () => {
+        document.querySelectorAll('#payment-list .price-item').forEach(el => el.classList.remove('selected'));
+        item.classList.add('selected');
+        selectedPayment = item.dataset.payment;
+        selectedPaymentInput.value = selectedPayment;
+      });
+    });
+  
+    // Form Validation
+    function validateForm() {
+      if (!selectedTypeInput.value.trim()) {
+        alert("Select a commission type and size.");
+        return false;
+      }
+      if (!selectedPaymentInput.value.trim()) {
+        alert("Select a payment method.");
+        return false;
+      }
+      return true;
+    }
+  
+    window.validateForm = validateForm;
+
+    
+  </script>
+  
+</body>
+</html>
