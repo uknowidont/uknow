@@ -30,18 +30,6 @@
     .flicker-smooth {
       animation: flickerAnim 3s ease forwards;
     }
-
-    @keyframes flickerAnim {
-      0% { box-shadow: none; filter: brightness(1); }
-      5% { box-shadow: 0 0 8px #ff7700, 0 0 12px #ff770055; filter: brightness(1.4); }
-      10% { box-shadow: none; filter: brightness(0.8); }
-      15% { box-shadow: 0 0 6px #ff7700; filter: brightness(1.2); }
-      25% { box-shadow: none; filter: brightness(1); }
-      35% { box-shadow: 0 0 10px #ff770088; filter: brightness(1.3); }
-      50% { box-shadow: none; }
-      100% { box-shadow: 0 0 10px #ff7700aa, 0 0 20px #ff770044; filter: brightness(1.2); }
-    }
-
     .size-options {
       display: flex;
       flex-direction: column;
