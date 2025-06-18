@@ -1,3 +1,72 @@
+  </style>  <style>
+    .flicker-smooth {
+      animation: flickerAnim 3s ease forwards;
+    }
+    .size-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      margin-top: 0.75rem;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 8px;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      border: 1px solid #ff660022;
+      transition: all 0.3s ease;
+    }
+
+    .size-options label {
+      color: #ccc;
+      font-family: 'Orbitron', sans-serif;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .size-options input[type="radio"] {
+      accent-color: #ff6600;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>  <style>
+    .flicker-smooth {
+      animation: flickerAnim 3s ease forwards;
+    }
+    .size-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      margin-top: 0.75rem;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 8px;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      border: 1px solid #ff660022;
+      transition: all 0.3s ease;
+    }
+
+    .size-options label {
+      color: #ccc;
+      font-family: 'Orbitron', sans-serif;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .size-options input[type="radio"] {
+      accent-color: #ff6600;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style> 
 * {
   box-sizing: border-box;
   margin: 0;
